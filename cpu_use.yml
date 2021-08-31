@@ -1,0 +1,6 @@
+---  
+- hosts: all 
+
+  tasks:   
+  - name: cpu_info
+    script: test.py 
