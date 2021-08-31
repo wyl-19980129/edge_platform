@@ -1,6 +1,14 @@
----  
-- hosts: all 
+# ---  
+# - hosts: all 
 
-  tasks:   
-  - name: cpu_info
-    script: test.py 
+#   tasks:   
+#   - name: cpu_info
+#     script: test.py 
+---
+- name: Hello World!
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Hello World!
+    shell: echo "Hi! Tower is working."
