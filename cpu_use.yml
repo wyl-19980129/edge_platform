@@ -6,7 +6,8 @@
 #     script: test.py 
 ---
 - name: Hello World!
-  hosts: all
+  hosts: 10.147.20.79
+  remote_user: zc
  
   tasks:
  
