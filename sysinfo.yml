@@ -14,6 +14,6 @@
   - name: Issue code
     copy: "src=sysinfotest.py dest=/home/zc/work/ mode=0777"
   -name: Run python script using an executable in a system path
-    ansible.builtin.script: /home/zc/work/sysinfotest.py
+    ansible.builtin.script: "/home/zc/work/sysinfotest.py"
     args:
-      executable: /usr/lib/python3.6
+      executable: "/usr/lib/python3.6"
