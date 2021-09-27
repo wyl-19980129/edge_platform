@@ -17,5 +17,5 @@
     ansible.builtin.script: "/home/wyl/Documents/edge/sysinfotest.py"
     args:
       chdir: /home/zc/work/
-      removes: /home/zc/work/sysinfotest.py
+      # removes: /home/zc/work/sysinfotest.py
       executable: "/usr/lib/python3.6"
