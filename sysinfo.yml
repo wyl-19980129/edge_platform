@@ -5,11 +5,15 @@
 #   - name: cpu_info
 #     script: test.py 
 ---
-- name: Hello World!
+- name:  Get System Infomation
   hosts: 10.147.20.79
   remote_user: zc
  
   tasks:
  
   - name: Issue code
-    copy: "src=sysinfotest.py dest=/home/zc/work"
+    copy: "src=sysinfotest.py dest=/home/zc/work/ mode=0777"
+  -name: Run python script using an executable in a system path
+    ansible.builtin.script: /home/zc/work/sysinfotest.py
+    args:
+      executable: /usr/lib/python3.6
