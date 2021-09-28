@@ -18,4 +18,4 @@
     args:
       chdir: /home/zc/work/
       # removes: /home/zc/work/sysinfotest.py
-      executable: "/usr/lib/python3.6"
+      executable: "/usr/bin/python3.6"
