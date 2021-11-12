@@ -11,11 +11,11 @@
  
   tasks:
  
-  # - name: Issue code
-  #   copy: "src=sysinfotest.py dest=/home/zc/work/ mode=0777"
-  - name: Run python script using an executable in a system path
-    ansible.builtin.script: "/tmp/sysinfotest.py"
-    args:
-      chdir: /home/zc/work/
-      # removes: /home/zc/work/sysinfotest.py
-      executable: "/usr/bin/python3.6"
+  - name: Issue code
+    copy: "src=sysinfotest.py dest=/home/zc/work/ mode=0777"
+  # - name: Run python script using an executable in a system path
+  #   ansible.builtin.script: "/tmp/sysinfotest.py"
+  #   args:
+  #     chdir: /home/zc/work/
+  #     # removes: /home/zc/work/sysinfotest.py
+  #     executable: "/usr/bin/python3.6"
